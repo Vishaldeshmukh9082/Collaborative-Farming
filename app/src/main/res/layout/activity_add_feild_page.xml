@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDF2"
+    tools:context=".Add_FeildPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="200dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/addicon" />
+
+            <TextView
+                android:id="@+id/addtxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:gravity="center"
+                android:text="Add Feild Here"
+                android:textColor="#4F3939"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/villagename"
+                    android:layout_width="198dp"
+                    android:layout_height="58dp"
+                    android:ems="10"
+                    android:hint="Enter Village Name"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/talukaname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="58dp"
+                    android:ems="10"
+                    android:hint="Enter Taluka Name"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/distrcictname"
+                android:layout_width="371dp"
+                android:layout_height="58dp"
+                android:ems="10"
+                android:hint="Enter District Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/landsurveynumber"
+                android:layout_width="371dp"
+                android:layout_height="58dp"
+                android:ems="10"
+                android:hint="Enter Feild Survey No."
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/feildarea"
+                android:layout_width="371dp"
+                android:layout_height="58dp"
+                android:ems="10"
+                android:hint="Enter Feild Area"
+                android:inputType="numberDecimal"
+                tools:text=" " />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="159dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Enter Feild Description"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select image of Feild"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:text="Add Image"
+                app:icon="@drawable/baseline_file_upload_24" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:padding="10dp"
+                android:text="submit"
+                app:cornerRadius="50dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
