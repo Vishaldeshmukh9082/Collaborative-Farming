@@ -12,18 +12,20 @@
         android:theme="@style/Theme.CollaborativeFarming"
         tools:targetApi="31">
         <activity
+            android:name=".View_ApplicationPage"
+            android:exported="false" />
+        <activity
             android:name=".Client_ProfilePage"
             android:exported="false"
-            android:parentActivityName=".Client_HomePage"/>
+            android:parentActivityName=".Client_HomePage" />
         <activity
             android:name=".Add_FeildPage"
             android:exported="false"
-            android:parentActivityName=".Client_HomePage"/>
+            android:parentActivityName=".Client_HomePage" />
         <activity
             android:name=".Client_HomePage"
             android:exported="false"
-            android:parentActivityName=".Client_Login"
-            />
+            android:parentActivityName=".Client_Login" />
         <activity
             android:name=".Client_Register"
             android:exported="false"
