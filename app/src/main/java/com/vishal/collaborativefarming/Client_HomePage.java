@@ -7,10 +7,11 @@ import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Toast;
+
+import com.vishal.collaborativefarming.model.User_Session;
 
 public class Client_HomePage extends AppCompatActivity implements OnClickListener {
     CardView addfeild,profile,viewapplication,paperwork,companys;
@@ -40,6 +41,8 @@ public class Client_HomePage extends AppCompatActivity implements OnClickListene
         switch(view.getId()){
             case R.id.addfeildcard:
                 i=new Intent(this,Add_FeildPage.class);
+
+
                 startActivity(i);
                 break;
             case R.id.profilecard:
@@ -62,4 +65,5 @@ public class Client_HomePage extends AppCompatActivity implements OnClickListene
                 break;
         }
     }
+
 }

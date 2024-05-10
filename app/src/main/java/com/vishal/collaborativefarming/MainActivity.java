@@ -10,16 +10,19 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.vishal.collaborativefarming.model.User_Session;
+
 public class MainActivity extends AppCompatActivity {
 
     Button button,button1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+
+         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        getSupportActionBar().hide(); //used to hide title bar
-         //setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
+        //used to hide title bar
          setContentView(R.layout.activity_main);
 
         button=findViewById(R.id.button);
@@ -30,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
                startActivity(intent);
             }
         });
+
         button1=findViewById(R.id.button1);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,4 +44,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 }

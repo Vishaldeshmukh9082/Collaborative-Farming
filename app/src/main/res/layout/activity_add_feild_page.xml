@@ -65,7 +65,7 @@
             </LinearLayout>
 
             <EditText
-                android:id="@+id/distrcictname"
+                android:id="@+id/districtname"
                 android:layout_width="371dp"
                 android:layout_height="58dp"
                 android:ems="10"
@@ -73,12 +73,12 @@
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/landsurveynumber"
+                android:id="@+id/feildsurveyno"
                 android:layout_width="371dp"
                 android:layout_height="58dp"
                 android:ems="10"
                 android:hint="Enter Feild Survey No."
-                android:inputType="textPersonName" />
+                android:inputType="number|text" />
 
             <EditText
                 android:id="@+id/feildarea"
@@ -90,7 +90,7 @@
                 tools:text=" " />
 
             <EditText
-                android:id="@+id/editTextTextMultiLine"
+                android:id="@+id/feilddescription"
                 android:layout_width="match_parent"
                 android:layout_height="159dp"
                 android:ems="10"
@@ -107,14 +107,14 @@
                 android:textSize="16sp" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/add_image"
                 android:layout_width="158dp"
                 android:layout_height="wrap_content"
                 android:text="Add Image"
                 app:icon="@drawable/baseline_file_upload_24" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/add_feild_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
