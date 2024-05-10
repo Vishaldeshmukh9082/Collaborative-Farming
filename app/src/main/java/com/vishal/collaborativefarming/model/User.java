@@ -25,6 +25,8 @@ public class User {
         this.email=email;
         this.password=password;
     }
+    public User(){}
+
 
     public User( String name, String contactno, String email, String gender, String address, String password) {
 

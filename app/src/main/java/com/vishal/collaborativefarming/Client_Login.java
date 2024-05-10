@@ -3,6 +3,7 @@ package com.vishal.collaborativefarming;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -55,6 +56,7 @@ public class Client_Login extends AppCompatActivity {
             DBHelper db=new DBHelper();
             String email=login_id.getText().toString();
             String password=login_pass.getText().toString();
+            int id;
 
             conn=db.connectionclass();
             try {
@@ -66,13 +68,14 @@ public class Client_Login extends AppCompatActivity {
 
                     ResultSet rs=stmt.executeQuery();
                     if(rs.next()) {
-                        User_Session userSession = new User_Session();
-                        userSession.session(Client_Login.this);
-                        userSession.saveSession(email,password);
+                         id = (int) rs.getLong(1);
+
+                        SharedPreferences pref=getSharedPreferences("ulogin",MODE_PRIVATE);
+                        SharedPreferences.Editor editor=pref.edit();
+                        editor.putString("uid", String.valueOf(id));
+                        editor.apply();
+
                         moveToHome();
-//                        user_session.createLoginSession(email, password);
-//                        HashMap<String, String> userDetails = user_session.getUserDetails();
-//                        String key = userDetails.get(1);
                         Log.d("Message", "Welcome");
                     }
                     else{
@@ -88,29 +91,6 @@ public class Client_Login extends AppCompatActivity {
 
 
     }
-
-//protected void onStart() {
-//    super.onStart();
-//
-//    checkSession();
-//}
-//    private void checkSession() {
-//        //check if user is logged in
-//        //if user is logged in --> move to mainActivity
-//
-//        User_Session userSession = new User_Session(Client_Login.this);
-//        int userID = userSession.getSession();
-//
-//        if(userID != -1){
-//            //user id logged in and so move to mainActivity
-//            moveToHome();
-//        }
-//        else{
-//            //do nothing
-//            Intent intent=new Intent(Client_Login.this,MainActivity.class);
-//        }
-//    }
-
 
 
     private void moveToHome() {
