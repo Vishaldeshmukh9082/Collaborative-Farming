@@ -85,7 +85,7 @@
                 android:layout_width="371dp"
                 android:layout_height="58dp"
                 android:ems="10"
-                android:hint="Enter Feild Area"
+                android:hint="Enter Feild Area (acre)"
                 android:inputType="numberDecimal"
                 tools:text=" " />
 

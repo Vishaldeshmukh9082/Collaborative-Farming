@@ -36,12 +36,14 @@ public class Add_FeildPage extends AppCompatActivity {
             int result=feild.addFeild();
             if(result!=0){
                 Toast.makeText(this, "Feild Added", Toast.LENGTH_SHORT).show();
+
                 villagename.setText("");
                 taluka.setText("");
                 district.setText("");
                 surveyno.setText("");
                 feildarea.setText("");
                 description.setText("");
+                finish();
             }else{
                 Toast.makeText(this, "Check Your Feild details", Toast.LENGTH_SHORT).show();
 

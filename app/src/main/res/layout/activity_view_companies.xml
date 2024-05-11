@@ -5,30 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFF9E4"
-    tools:context=".View_ApplicationPage">
+    android:orientation="vertical"
+    tools:context=".View_CompaniesPage">
 
     <TextView
-        android:id="@+id/textView11"
-        android:layout_width="411dp"
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="11dp"
-        android:text="Feild Applications"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="12dp"
+        android:text="Companies"
         android:textColor="#472828"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Companiesrecycleview"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="411dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Companiesrecycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

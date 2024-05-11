@@ -11,8 +11,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Toast;
 
-import com.vishal.collaborativefarming.model.User_Session;
-
 public class Client_HomePage extends AppCompatActivity implements OnClickListener {
     CardView addfeild,profile,viewapplication,paperwork,companys;
     @Override
@@ -59,9 +57,9 @@ public class Client_HomePage extends AppCompatActivity implements OnClickListene
 
                 break;
             case R.id.companyscard:
-//                i=new Intent(this,Add_FeildPage.class);
-                Toast.makeText(this, "Companys option Clicked", Toast.LENGTH_SHORT).show();
-
+                i=new Intent(this, View_CompaniesPage.class);
+                //Toast.makeText(this, "Companys option Clicked", Toast.LENGTH_SHORT).show();
+                startActivity(i);
                 break;
         }
     }

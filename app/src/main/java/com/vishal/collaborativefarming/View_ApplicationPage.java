@@ -60,14 +60,13 @@ public class View_ApplicationPage extends AppCompatActivity {
                 PreparedStatement statement = conn.prepareStatement(query);
                 ResultSet rs=statement.executeQuery();
                 while(rs.next()) {
-                    surveyno.add(rs.getString(1));
-                    village.add(rs.getString(2));
-                    taluka.add(rs.getString(3));
-                    district.add(rs.getString(4));
-                    feildarea.add(rs.getString(5));
-                    description.add(rs.getString(6));
-                    image.add(rs.getString(7));
-                    Log.d("Data",rs.getString(1));
+                    surveyno.add(rs.getString(2));
+                    village.add(rs.getString(3));
+                    taluka.add(rs.getString(4));
+                    district.add(rs.getString(5));
+                    feildarea.add(rs.getString(6));
+                    description.add(rs.getString(7));
+                    image.add(rs.getString(8));
 
                 }
 
