@@ -10,6 +10,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.mysql.jdbc.BlobFromLocator;
+import com.vishal.collaborativefarming.company.Company_Login;
 
 public class IndexActivity extends AppCompatActivity {
 
@@ -22,12 +23,16 @@ public class IndexActivity extends AppCompatActivity {
             @Override
             public void run() {
                 SharedPreferences shref=getSharedPreferences("ulogin",MODE_PRIVATE);
-                String check=shref.getString("uid",null);
+                SharedPreferences pref=getSharedPreferences("companylogin",MODE_PRIVATE);
+                String user=shref.getString("uid",null);
+                String company=pref.getString("cid",null);
                 Intent intent;
 
-                if(check!=null){
-                    Log.d("Message",check);
+                if(user!=null){
+                    Log.d("Message",user);
                     intent=new Intent(IndexActivity.this,Client_HomePage.class);
+                }else if(company!=null){
+                    intent=new Intent(IndexActivity.this, Company_Login.class);
                 }else{
                     intent=new Intent(IndexActivity.this,MainActivity.class);
                 }
