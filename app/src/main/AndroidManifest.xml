@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
 
     <application
         android:allowBackup="true"
@@ -14,7 +17,19 @@
         android:theme="@style/Theme.CollaborativeFarming"
         tools:targetApi="31">
         <activity
-            android:name=".Company_Login"
+            android:name=".DescriptionViewPage"
+            android:exported="false"
+            android:parentActivityName=".Company_HomePage"/>
+        <activity
+            android:name=".PaperWork_Page"
+            android:exported="false"
+            android:parentActivityName=".Client_HomePage" />
+        <activity
+            android:name=".Select_FeildPage"
+            android:exported="false"
+            android:parentActivityName=".View_CompaniesPage" />
+        <activity
+            android:name=".Company_HomePage"
             android:exported="false" />
         <activity
             android:name=".View_CompaniesPage"
@@ -47,6 +62,10 @@
             android:parentActivityName=".Client_Login" />
         <activity
             android:name=".Client_Login"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Company_Login"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity

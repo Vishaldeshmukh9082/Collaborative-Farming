@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9E4"
+    tools:context=".DescriptionViewPage"
+    tools:visibility="visible">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                tools:srcCompat="@drawable/addicon" />
+
+            <TextView
+                android:id="@+id/surveyno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Survey NO : "
+                android:textSize="20sp"
+                android:textColor="#4F3939"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/feildarea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Feild Area : "
+                android:textSize="20sp"
+                android:textColor="#4F3939"
+                android:textStyle="bold"  />
+
+            <TextView
+                android:id="@+id/ownername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Owner Name : "
+                android:textSize="20sp"
+                android:textColor="#4F3939"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ownercontact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="ContactNo : "
+                android:textSize="20sp"
+                android:textColor="#4F3939"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/owneraddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Owner Address : "
+                android:textSize="20sp"
+                android:textColor="#4F3939"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/village"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Village : "
+                android:textSize="20sp"
+                android:textColor="#4F3939"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/taluka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Taluka : "
+                android:textSize="20sp"
+                android:textColor="#4F3939"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Destrict : "
+                android:textSize="20sp"
+                android:textColor="#4F3939"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Feild Description : "
+                android:textSize="20sp"
+                android:textColor="#4F3939"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Get For Rent" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

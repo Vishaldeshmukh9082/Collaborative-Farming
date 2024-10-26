@@ -1,3 +1,45 @@
 <resources>
     <string name="app_name">Collaborative Farming</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="Districts">
+        <item>satara</item>
+        <item>kolhapur</item>
+    </string-array>
+    <string-array name="satara">
+        <item>jawali</item>
+        <item>khatav</item>
+        <item>maan</item>
+    </string-array>
+    <string-array name="Kolhapur">
+        <item>panhala</item>
+        <item>shirol</item>
+        <item>shahuwadi</item>
+    </string-array>
+    <string-array name="jawali">
+        <item>kharshi</item>
+        <item>medha</item>
+    </string-array>
+    <string-array name="maan">
+        <item>dahiwadi</item>
+        <item>bijawadi</item>
+    </string-array>
+    <string-array name="khatav">
+        <item>mandave</item>
+        <item>vaduj</item>
+    </string-array>
+
+    <string-array name="panhala">
+        <item>undri</item>
+        <item>karanjphen</item>
+    </string-array>
+    <string-array name="shirol">
+        <item>agar</item>
+        <item>danoli</item>
+    </string-array>
+    <string-array name="shahuwadi">
+        <item>akurle</item>
+        <item>bambavade</item>
+    </string-array>
 </resources>

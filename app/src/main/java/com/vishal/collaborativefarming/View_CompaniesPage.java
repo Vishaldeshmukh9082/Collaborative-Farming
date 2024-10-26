@@ -8,8 +8,9 @@ import android.os.Bundle;
 import android.widget.ImageView;
 
 public class View_CompaniesPage extends AppCompatActivity {
+    String[] companyemail={"leslischips9082@gmail.com","butterflypvtltd@gmail.com","pratsinghkarkhana@gmail.com","kohinooroil@gmail.com","tejumasala@gmail.com"};
 
-    String[] companyname={"leslis Chips Pvt.Ltd", "Butterfly Pvt.Ltd","Pratsingh Suger karkhana Ltd","Lohinoor Refined Oil Pvt.Ltd","Teju Masala Pvt.Ltd"};
+    String[] companyname={"leslis Chips Pvt.Ltd", "Butterfly Pvt.Ltd","Pratsingh Suger karkhana Ltd","Kohinoor Refined Oil Pvt.Ltd","Teju Masala Pvt.Ltd"};
     int[] copmanyimage={R.drawable.chipscompany,R.drawable.conflowercompany,R.drawable.sugarcompanyimg,R.drawable.soyabeancompany,R.drawable.masalacompany};
     String[] location={"MIDC Khandala, satra","MIDC Shirval, satara","Bhuij, satara","Koregav, satara","Powai Naka,satara"};
     String[] companydescription={"AUEVSS Limited is an Indian potato chip processing company by potato growers",
@@ -27,7 +28,7 @@ public class View_CompaniesPage extends AppCompatActivity {
 
         recyclerView=findViewById(R.id.Companiesrecycleview);
 
-        companiesAdapter=new CompaniesAdapter(View_CompaniesPage.this,companyname,copmanyimage,location,companydescription);
+        companiesAdapter=new CompaniesAdapter(View_CompaniesPage.this,this,companyname,copmanyimage,location,companydescription,companyemail);
         recyclerView.setAdapter(companiesAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(View_CompaniesPage.this));
     }

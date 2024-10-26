@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFF9E4"
+    android:visibility="visible"
     tools:context=".Client_HomePage">
 
     <ScrollView
@@ -52,7 +53,6 @@
                     app:cardCornerRadius="20dp">
 
                     <LinearLayout
-                        android:id="@+id/addfeildcard"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center"
@@ -63,8 +63,8 @@
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:layout_marginBottom="10dp"
-                            android:tint="#FFFFFF"
-                            app:srcCompat="@drawable/addicon" />
+                            app:srcCompat="@drawable/addicon"
+                            app:tint="#FFFFFF" />
 
                         <TextView
                             android:id="@+id/addfeildtxt"
@@ -76,7 +76,6 @@
                             android:textSize="16sp"
                             android:textStyle="bold" />
                     </LinearLayout>
-
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
@@ -88,7 +87,6 @@
                     app:cardCornerRadius="20dp">
 
                     <LinearLayout
-                        android:id="@+id/profilecard"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center"
@@ -99,8 +97,8 @@
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:layout_marginBottom="10dp"
-                            android:tint="#FFFFFF"
-                            app:srcCompat="@drawable/profileicon" />
+                            app:srcCompat="@drawable/profileicon"
+                            app:tint="#FFFFFF" />
 
                         <TextView
                             android:id="@+id/profiletxt"
@@ -112,8 +110,8 @@
                             android:textSize="16sp"
                             android:textStyle="bold" />
                     </LinearLayout>
-
                 </androidx.cardview.widget.CardView>
+
 
             </LinearLayout>
 
@@ -143,8 +141,8 @@
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:layout_marginBottom="10dp"
-                            android:tint="#FFFFFF"
-                            app:srcCompat="@drawable/viewicon" />
+                            app:srcCompat="@drawable/viewicon"
+                            app:tint="#FFFFFF" />
 
                         <TextView
                             android:id="@+id/applicationtxt"
@@ -156,8 +154,8 @@
                             android:textSize="16sp"
                             android:textStyle="bold" />
                     </LinearLayout>
-
                 </androidx.cardview.widget.CardView>
+
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/paperworkcard"
@@ -178,8 +176,8 @@
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:layout_marginBottom="10dp"
-                            android:tint="#FFFFFF"
-                            app:srcCompat="@drawable/paperworkicon" />
+                            app:srcCompat="@drawable/paperworkicon"
+                            app:tint="#FFFFFF" />
 
                         <TextView
                             android:id="@+id/paperworktxt"
@@ -191,8 +189,8 @@
                             android:textSize="16sp"
                             android:textStyle="bold" />
                     </LinearLayout>
-
                 </androidx.cardview.widget.CardView>
+
 
             </LinearLayout>
 
@@ -222,8 +220,8 @@
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:layout_marginBottom="10dp"
-                            android:tint="#FFFEFE"
-                            app:srcCompat="@drawable/companyicon" />
+                            app:srcCompat="@drawable/companyicon"
+                            app:tint="#FFFEFE" />
 
                         <TextView
                             android:id="@+id/companytxt"
@@ -234,18 +232,23 @@
                             android:textColor="#FFFFFF"
                             android:textSize="16sp"
                             android:textStyle="bold" />
-                    </LinearLayout>
 
+                    </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/emptycard"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:fadingEdge="none"
                     android:visibility="invisible"
-                    app:cardBackgroundColor="#00000000">
+                    app:cardBackgroundColor="#FFF9E4"
+                    app:cardCornerRadius="20dp">
+
 
                 </androidx.cardview.widget.CardView>
+
 
             </LinearLayout>
 

@@ -9,8 +9,13 @@
     tools:context=".MainActivity">
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,7 +28,6 @@
                 android:id="@+id/imageView"
                 android:layout_width="222dp"
                 android:layout_height="179dp"
-                android:layout_marginTop="20dp"
                 app:srcCompat="@drawable/app_logo" />
 
             <TextView
@@ -128,7 +132,7 @@
                         android:textColor="#000000" />
 
                     <Button
-                        android:id="@+id/button1"
+                        android:id="@+id/CompanysBtn"
                         style="@style/Widget.Material3.Button.OutlinedButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -156,7 +160,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
-                android:layout_marginBottom="30dp"
+                android:layout_marginBottom="10dp"
                 android:gravity="center"
                 android:text="copyright @ right to vishal"
                 android:textColor="#3D3A3A" />

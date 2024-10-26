@@ -41,35 +41,63 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <LinearLayout
+
+            <!--                <EditText-->
+<!--                    android:id="@+id/talukaname"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="58dp"-->
+<!--                    android:ems="10"-->
+<!--                    android:hint="Enter Taluka Name"-->
+<!--                    android:inputType="textPersonName" />-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/districtname"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content"
+                android:hint="Select District"
+                tools:ignore="MissingConstraints">
 
-                <EditText
-                    android:id="@+id/villagename"
-                    android:layout_width="198dp"
-                    android:layout_height="58dp"
-                    android:ems="10"
-                    android:hint="Enter Village Name"
-                    android:inputType="textPersonName" />
+                <AutoCompleteTextView
 
-                <EditText
+                    android:id="@+id/district"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/talukaname"
-                    android:layout_width="wrap_content"
-                    android:layout_height="58dp"
-                    android:ems="10"
-                    android:hint="Enter Taluka Name"
-                    android:inputType="textPersonName" />
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select Taluka"
+                    tools:ignore="MissingConstraints">
 
-            </LinearLayout>
+                <AutoCompleteTextView
+
+                    android:id="@+id/taluka"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+<!--            <EditText-->
+<!--                android:id="@+id/districtname"-->
+<!--                android:layout_width="371dp"-->
+<!--                android:layout_height="58dp"-->
+<!--                android:ems="10"-->
+<!--                android:hint="Enter District Name"-->
+<!--                android:inputType="textPersonName" />-->
 
             <EditText
-                android:id="@+id/districtname"
-                android:layout_width="371dp"
+                android:id="@+id/villagename"
+                android:layout_width="match_parent"
                 android:layout_height="58dp"
                 android:ems="10"
-                android:hint="Enter District Name"
+                android:hint="Enter Village Name"
                 android:inputType="textPersonName" />
 
             <EditText

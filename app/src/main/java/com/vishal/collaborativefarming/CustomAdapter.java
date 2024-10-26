@@ -4,12 +4,10 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -22,16 +20,16 @@ import com.vishal.collaborativefarming.database.DBHelper;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.util.ArrayList;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
      private Context context;
      Connection conn;
     Activity activity;
-    private ArrayList<String> surveyno,village,taluka,district,feildarea,description,image;
-
-     CustomAdapter(Context context, ArrayList surveyno, ArrayList village, ArrayList taluka, ArrayList district, ArrayList feildarea, ArrayList description, ArrayList image) {
+     ArrayList<String> surveyno,village,taluka,district,feildarea,description,image;
+     CustomAdapter(Context context, ArrayList surveyno, ArrayList village, ArrayList taluka,
+                   ArrayList district, ArrayList feildarea, ArrayList description, ArrayList image)
+     {
         this.context = context;
         this.surveyno = surveyno;
         this.village = village;
@@ -41,7 +39,6 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         this.description = description;
         this.image = image;
     }
-
 
     @NonNull
     @Override
@@ -60,11 +57,11 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             @Override
             public void onClick(View view) {
                 DeleteFeild(String.valueOf(surveyno.get(position)));
+
                 Toast.makeText(context, "delete", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(context, Client_HomePage.class);
 
                 activity.startActivityForResult(intent, 1);
-
             }
         });
 
@@ -74,8 +71,6 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     public int getItemCount() {
         return surveyno.size();
     }
-
-
     public class MyViewHolder extends RecyclerView.ViewHolder{
         TextView textView1,textView2,textView3;
         ImageView imageView9;
@@ -83,7 +78,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             textView1 = itemView.findViewById(R.id.textView1);
-            textView2 = itemView.findViewById(R.id.textView2);
+            textView2 = itemView.findViewById(R.id.phonenot);
             textView3 = itemView.findViewById(R.id.textView3);
             imageView9=itemView.findViewById(R.id.imageView9);
         }

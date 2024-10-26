@@ -3,8 +3,8 @@ package com.vishal.collaborativefarming.database;
 import android.os.StrictMode;
 import android.util.*;
 import android.widget.Toast;
-
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
 
 public class DBHelper {
 
@@ -14,7 +14,7 @@ public class DBHelper {
     @SuppressWarnings("newAPI")
     public Connection connectionclass(){
 
-        ip="192.168.0.104";
+        ip="192.168.0.102";
         dbname="collabfarmingdb";
         password="root";
         uname="root";
